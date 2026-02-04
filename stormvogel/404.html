@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting to https://stormchecker.github.io/stormvogel/</title>
+
+    <script>
+        window.onload = function () {
+            const destination = window.location.href;
+            if (window.location.href.includes("moves-rwth.github.io/stormvogel")) {
+                const redirectLocation = window.location.href.replace(
+                    "moves-rwth.github.io/stormvogel",
+                    "stormchecker.github.io/stormvogel"
+                );
+                document.getElementById("body").innerHTML = "Stormvogel has moved into the stormchecker organization repository!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
+        }
+    </script>
+</head>
+
+<body id="body" style="text-align: center">
+    Page not found
+</body>
+
+</html>
