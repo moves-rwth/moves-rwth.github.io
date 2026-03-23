@@ -17,6 +17,15 @@
                 document.getElementById("body").innerHTML = "Stormvogel has moved into the stormchecker organization repository!<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
             }
+            <!-- Redirect for storm-doc -->
+            if (window.location.href.includes("moves-rwth.github.io/storm-doc")) {
+                const redirectLocation = window.location.href.replace(
+                    "moves-rwth.github.io/storm-doc",
+                    "stormchecker.github.io/storm-doc"
+                );
+                document.getElementById("body").innerHTML = "Storm-doc has moved into the stormchecker organization repository!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
         }
     </script>
 </head>
