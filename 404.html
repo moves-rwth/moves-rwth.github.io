@@ -8,15 +8,17 @@
     <script>
         window.onload = function () {
             const destination = window.location.href;
-            <!-- Redirect for stormvogel -->
-            if (window.location.href.includes("moves-rwth.github.io/stormvogel")) {
+
+            <!-- Redirect for storm-benchmark-logs -->
+            if (window.location.href.includes("moves-rwth.github.io/storm-benchmark-logs")) {
                 const redirectLocation = window.location.href.replace(
-                    "moves-rwth.github.io/stormvogel",
-                    "stormchecker.github.io/stormvogel"
+                    "moves-rwth.github.io/storm-benchmark-logs",
+                    "stormchecker.github.io/storm-benchmark-logs"
                 );
-                document.getElementById("body").innerHTML = "Stormvogel has moved into the stormchecker organization repository!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                document.getElementById("body").innerHTML = "Storm-benchmark-logs has moved into the stormchecker organization repository!<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
             }
+
             <!-- Redirect for storm-doc -->
             if (window.location.href.includes("moves-rwth.github.io/storm-doc")) {
                 const redirectLocation = window.location.href.replace(
@@ -24,6 +26,16 @@
                     "stormchecker.github.io/storm-doc"
                 );
                 document.getElementById("body").innerHTML = "Storm-doc has moved into the stormchecker organization repository!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
+
+            <!-- Redirect for stormvogel -->
+            if (window.location.href.includes("moves-rwth.github.io/stormvogel")) {
+                const redirectLocation = window.location.href.replace(
+                    "moves-rwth.github.io/stormvogel",
+                    "stormchecker.github.io/stormvogel"
+                );
+                document.getElementById("body").innerHTML = "Stormvogel has moved into the stormchecker organization repository!<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
             }
         }
