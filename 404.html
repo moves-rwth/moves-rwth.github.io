@@ -29,6 +29,16 @@
                 window.location.href = redirectLocation;
             }
 
+            <!-- Redirect for stormpy -->
+            if (window.location.href.includes("moves-rwth.github.io/stormpy")) {
+                const redirectLocation = window.location.href.replace(
+                    "moves-rwth.github.io/stormpy",
+                    "stormchecker.github.io/stormpy"
+                );
+                document.getElementById("body").innerHTML = "Stormpy has moved into the stormchecker organization repository!<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
+
             <!-- Redirect for stormvogel -->
             if (window.location.href.includes("moves-rwth.github.io/stormvogel")) {
                 const redirectLocation = window.location.href.replace(
